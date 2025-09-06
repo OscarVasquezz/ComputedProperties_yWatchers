@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->  
+    <link rel="stylesheet" href="css/style.css">
     <script src="vue/vue.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    
+  <div id="tituX"><h1>PRACTICA</h1></div>
+    <div id="titu"><h1>Introducción</h1></div>
     <div id="app">
         <n1>{{ message }}</n1>
         <h2>{{contador>=10 ? 'el dato es igual o mayor a 10':'El dato es menor a 10'}}</h2>
@@ -41,6 +43,27 @@
   <button v-on:click="reverseMessage">Mensaje invertido</button>
 </div>
 
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+
+<div id="app-7">
+  <ol>
+    <!--
+      Ahora proporcionamos a cada todo-item con el objeto todo
+      que representa, para que su contenido pueda ser dinámico.
+      También necesitamos proporcionar a cada componente con una "clave",
+      que vamos a explicar más adelante.
+    -->
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+    </todo-item>
+  </ol>
+</div>
+<div id="titu"><h1>La instancia Vue</h1></div>
 
 
 

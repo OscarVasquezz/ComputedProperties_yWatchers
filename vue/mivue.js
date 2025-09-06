@@ -43,3 +43,30 @@ var app5 = new Vue({
     }
   }
 })
+
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hola Vue!'
+  }
+})
+
+
+// Define un nuevo componente llamado todo-item
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<li>{{todo.text}}</li>'
+})
+
+var app7 = new Vue({
+  el: '#app-7',
+  data: {
+    groceryList: [
+      { id: 0, text: 'Vegetales' },
+      { id: 1, text: 'Queso' },
+      { id: 2, text: 'Carne' },
+      { id: 3, text: 'Semillas' },
+      { id: 4, text: 'Frutas' }  
+    ]
+  }
+})

@@ -1,0 +1,17 @@
+        #titu {
+          /*width: 200px;*/
+          width: 100%;
+          border: 05px;
+          border-radius: 05px;
+          background-color: lightblue;
+        }
+        #tituX {
+          /*width: 200px;*/
+          width: 100%;
+          border: 05px;
+          border-radius: 05px;
+          background-color: rgb(90, 89, 10);
+        }
+        #tituX h1{
+            color: antiquewhite;
+        }

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->  
+    <script src="vue/vue.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     
     <div id="app">
-        {{ message }}
+        <n1>{{ message }}</n1>
+        <h2>{{contador>=10 ? 'el dato es igual o mayor a 10':'El dato es menor a 10'}}</h2>
+        
+
     </div>
 
-<script src="vue/mivue.js"></script>
-<script>
+
+<script src="vue/mivue.js">
     const mounteApp = app.mount('#app');
 </script>
+
 </body>
 </html>

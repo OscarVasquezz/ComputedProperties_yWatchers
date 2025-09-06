@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hola Vue!'
+    message: 'Hola Vue!',
+    contador : 1
   }
 })
